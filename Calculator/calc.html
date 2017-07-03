@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta charset="utf-8">
+        <link href="calc.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="buttonBox">
+            <div id="number">
+                <input type="button" value="1" class="numbers">
+                
+                <input type="button" value="2" class="numbers">
+                
+                <input type="button" value="3" class="numbers">
+                
+                <input type="button" value="4" class="numbers">
+                
+                <input type="button" value="5" class="numbers">
+                
+                <input type="button" value="6" class="numbers">
+                
+                <input type="button" value="7" class="numbers">
+                
+                <input type="button" value="8" class="numbers">
+                
+                <input type="button" value="9" class="numbers">
+                
+                <input type="button" value="0" class="numbers" style="margin-left:146px">
+            </div>
+            <div id="calc">
+                <input type="button" value="+" class="inputcalc">
+                <input type="button" value="-" class="inputcalc">
+                <input type="button" value="*" class="inputcalc">
+                <input type="button" value="/" class="inputcalc">
+                <input type="button" value="." class="inputcalc">
+                <input type="button" value="=" style="margin-left:170.5px;width:50px;height:50px;margin-top:5px" onclick="calc();">
+            </div>
+            <div id="result">
+                <input type="text" id="resultbox" size="50" placeholder="버튼 클릭하세요!">
+            </div>
+            <input type="button" value="C" id="reset" onclick="reset();">
+        </div>
+    </body>
+    <script src="calc.js" type="text/javascript"></script>
+</html>
+
