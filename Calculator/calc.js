@@ -37,7 +37,16 @@
                 console.log(result);
                 
             }
-            
+            function deleteValue(){
+                var deleteBox=document.getElementById('resultbox');
+                var allLeng=(this.sentence1).length;
+                var result="";
+                for(var cnt=0;cnt<allLeng-1;cnt++){
+                    result=(this.sentence1)[cnt];
+                }
+                deleteBox.value=result;
+                //추후 수정
+            }
             function reset(){
                 var deleteAll=document.getElementById("resultbox");
                 deleteAll.value=deleteAll.defaultValue;

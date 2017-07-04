@@ -33,7 +33,10 @@
                 <input type="button" value="*" class="inputcalc">
                 <input type="button" value="/" class="inputcalc">
                 <input type="button" value="." class="inputcalc">
-                <input type="button" value="=" style="margin-left:170.5px;width:50px;height:50px;margin-top:5px" onclick="calc();">
+                <input type="button" value="<=" style="width:50px;height:50px;position:relative;
+                left:100px;" onclick="deleteValue();">
+                <input type="button" value="=" style="margin-left:170.5px;width:50px;
+                height:50px;margin-top:5px" onclick="calc();">
             </div>
             <div id="result">
                 <input type="text" id="resultbox" size="50" placeholder="버튼 클릭하세요!">
