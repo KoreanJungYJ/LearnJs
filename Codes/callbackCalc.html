@@ -1,0 +1,45 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script type="text/javascript">
+            function calc(op, num1, num2, callback){
+                var result = "";
+
+                switch(op){
+                    case "+" :
+                        result = num1 + num2;
+                        break;
+                    
+                    case "-" :
+                        result = num1 - num2;
+                        break;
+
+                    case "*" :
+                        result = num1 * num2;
+                        break;
+                    
+                    case "/" :
+                        result = num1 / num2;
+                        break;
+                    
+                    default :
+                        result = "Invalid Parameter!";
+                }
+                callback(result);
+            }
+
+            function firFunc(result){
+                console.log("합은 : " + result + "\n");
+            }
+
+            function secFunc(result){
+                console.log("정답! : " + result + "\n");
+            }
+
+            calc("+", 30, 5, firFunc);
+            calc("/", 50, 10, secFunc);
+        </script>
+    </body>
+</html>
