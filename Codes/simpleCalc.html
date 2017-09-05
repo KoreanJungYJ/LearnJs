@@ -1,0 +1,51 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script type="text/javascript">
+            function calc(op, num1, num2){
+                var result = "";
+
+                switch(op){
+                    case "+" : add(num1, num2);
+                    break;
+
+                    case "-" : sub(num1, num2);
+                    break;
+
+                    case "*" : mul(num1, num2);
+                    break;
+
+                    case "/" : div(num1, num2);
+                    break;
+
+                    default : checkFunc();
+                }
+                console.log("결과 : " + result);
+
+                function add(num1, num2){
+                    result = num1 + num2;
+                    return result;
+                }
+
+                function sub(num1, num2){
+                    result = num1 - num2;
+                    return result;
+                }
+
+                function mul(num1, num2){
+                    result = num1 * num2;
+                    return result;
+                }
+
+                function div(num1, num2){
+                    result = num1 / num2;
+                    return result;
+                }
+            }
+
+            calc("+", 30, 10);
+        </script>
+    </body>
+</html>
