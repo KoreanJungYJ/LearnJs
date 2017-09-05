@@ -1,0 +1,21 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script type="text/javascript">
+            var cnt = 1;
+            
+            var setEvent = setInterval(() => {
+                console.log("Check Count : " + cnt);
+                cnt++;
+                if(cnt === 6){
+                    console.log("Operation Finished!");
+                    clearInterval(setEvent);
+                }
+            }, 1000);
+
+            console.log("asynchronized! -> 동작이 끝나지 않아도 실행됨"); //먼저 실행됨 - 비동기 처리
+        </script>
+    </body>
+</html>
