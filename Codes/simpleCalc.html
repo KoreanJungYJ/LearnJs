@@ -22,7 +22,7 @@
 
                     default : checkFunc();
                 }
-                console.log("결과 : " + result);
+                console.log("결과 : " + result + "\n");
 
                 function add(num1, num2){
                     result = num1 + num2;
@@ -43,9 +43,15 @@
                     result = num1 / num2;
                     return result;
                 }
+
+                function checkFunc(){
+                    result = "Invalid Parameter!";
+                    return result;
+                }
             }
 
             calc("+", 30, 10);
+            calc("hamtory?", 20, 10);
         </script>
     </body>
 </html>
