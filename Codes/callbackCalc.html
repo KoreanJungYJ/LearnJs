@@ -7,6 +7,7 @@
             function calc(op, num1, num2, callback){
                 var result = "";
 
+                //기존 switch문과 동일
                 switch(op){
                     case "+" :
                         result = num1 + num2;
@@ -27,6 +28,8 @@
                     default :
                         result = "Invalid Parameter!";
                 }
+
+
                 callback(result);
             }
 
@@ -38,7 +41,7 @@
                 console.log("정답! : " + result + "\n");
             }
 
-            calc("+", 30, 5, firFunc);
+            calc("+", 30, 5, firFunc); //result를 그대로 받아와 firFunc에 맞는 console을 출력 -- 아래도 동일
             calc("/", 50, 10, secFunc);
         </script>
     </body>
