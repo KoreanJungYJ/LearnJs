@@ -1,3 +1,4 @@
+/* 동작 */
 
 document.addEventListener('DOMContentLoaded', function() {
     init();
