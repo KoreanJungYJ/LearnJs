@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <div id = "btn" style = "width:10px;height:10px;
+        border:1px solid gray; cursor:pointer;">
+        </div>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            function showCallBack(){
+                alert("Count is finished!");
+            }
+
+            function checkCount(callback){
+                let cnt = 1;
+                document.getElementById('btn').addEventListener('click', () => {
+                    console.log("clicked! : " + cnt);
+                    cnt ++;
+                    if(cnt > 10){
+                        callback();
+                        cnt = 10;
+                    }
+                });
+            }
+
+            checkCount(showCallBack);
+        </script>
+    </body>
+</html>
