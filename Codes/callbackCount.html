@@ -7,7 +7,7 @@
     <body>
         <script type="text/javascript">
 
-            function showCallBack(){
+            /*function showCallBack(){
                 alert("Count is finished!");
             }
 
@@ -23,7 +23,30 @@
                 });
             }
 
-            checkCount(showCallBack);
+            checkCount(showCallBack);*/
+            // document.addEventListener('DOMContentLoaded', () => {
+            //     set(alerts);
+            // })
+            window.onload = set(alerts);
+
+            function alerts(){
+                console.log("checkCount!");
+            }
+
+            function set(callback){
+                let cnt = 0;
+                var set = setInterval(() => {
+                    
+                    cnt++;
+                    if(cnt == 5){
+                        clearInterval(set);
+                        callback();
+                    }
+                    console.log(cnt);
+                },1000);
+            }
+
+            
         </script>
     </body>
 </html>
